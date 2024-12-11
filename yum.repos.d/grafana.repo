@@ -1,0 +1,7 @@
+[grafana]
+baseurl = https://packages.grafana.com/oss/release/rpm
+enabled = 0
+gpgcheck = 1
+gpgkey = https://packages.grafana.com/gpg.key
+name = Grafana YUM Repository
+

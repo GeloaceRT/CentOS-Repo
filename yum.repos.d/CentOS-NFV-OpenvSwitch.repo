@@ -1,0 +1,35 @@
+# CentOS-NFV-OpenvSwitch.repo
+#
+# Please see http://wiki.centos.org/SpecialInterestGroup/NFV for more
+# information
+
+[centos-nfv-openvswitch]
+name=CentOS Stream $releasever - NFV OpenvSwitch
+metalink=https://mirrors.centos.org/metalink?repo=centos-nfv-sig-openvswitch-2-$stream&arch=$basearch&protocol=https,http
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-NFV
+module_hotfixes=1
+
+[centos-nfv-openvswitch-testing]
+name=CentOS Stream $releasever - NFV OpenvSwitch Testing
+baseurl=http://buildlogs.centos.org/centos/$stream/nfv/$basearch/openvswitch-2/
+gpgcheck=0
+enabled=0
+module_hotfixes=1
+
+[centos-nfv-openvswitch-debuginfo]
+name=CentOS Stream $releasever - NFV OpenvSwitch - Debug
+metalink=https://mirrors.centos.org/metalink?repo=centos-nfv-sig-openvswitch-2-debug-$stream&arch=$basearch&protocol=https,http
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-NFV
+module_hotfixes=1
+
+[centos-nfv-openvswitch-source]
+name=CentOS Stream $releasever - NFV OpenvSwitch - Source
+metalink=https://mirrors.centos.org/metalink?repo=centos-nfv-sig-openvswitch-2-source-$stream&arch=$basearch&protocol=https,http
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-NFV
+module_hotfixes=1
